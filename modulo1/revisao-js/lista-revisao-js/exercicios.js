@@ -23,6 +23,9 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
+    numerosPares = array.filter((numeros) => {
+        return numeros % 2 === 0
+    })
     
 }
 
@@ -58,17 +61,25 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+   return `Venha assitir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores.join([separador = ', '])}.`
+     
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+   const pessoa = { 
+        ...pessoa,
+        nome: "ANÔNIMO"
+   }
+   return pessoa
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+   return pessoas.filter(pessoa => {
+       return (pessoa.idade > 14  && altura >= 1.5
+      )
+    })
 }
 
 // EXERCÍCIO 13B
