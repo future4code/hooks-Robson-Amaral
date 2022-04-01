@@ -53,12 +53,20 @@ div img {
 .container {
     height: 500px;
     text-align: center;
+    word-break: break-word;
 }
 
 .icone {
     height: 15px;
 }
 
+.quebra-linha {
+    word-break: break-word;
+}
+
+.espacamento {
+    padding-top: 15px;
+}
 
 /** 
   *
