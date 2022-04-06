@@ -68,6 +68,10 @@ div img {
     padding-top: 15px;
 }
 
+#texto-justificado {
+    text-align: center
+}
+
 /** 
   *
   *  ESTILOS HOME 
